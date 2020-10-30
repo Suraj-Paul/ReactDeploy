@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'build')))
 
 //Send all other request to React app
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build/index.html'));
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
 })
 
 const port = process.env.PORT || '3046';
